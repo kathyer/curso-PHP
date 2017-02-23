@@ -1,0 +1,4 @@
+﻿Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+Segunda linea del fichero de texto
+Ese es mi secreto, yo siempre tengo sueño
+Cuarta y última línea para probar el tratamiento de ficheros de texto

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+</head><meta charset="utf-8"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<title>Ejercicio final de formularios. Clase 4. Clase 4</title>
+<meta name="Description" content="Ejercicio de repaso de formularios"/><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<h1>Formulario de registro</h1>
+<form action="salida.php" method="POST" target="_self">
+
+<table>
+	<thead>
+	</thead>
+	<tbody>
+	<tr>
+		<td><label for="nombre">Nombre: </label></td>
+		<td><input type="text" id="nombre" name="nombre" required="required" placeholder="Introduzca su nombre" /></td>
+		<td><input type="submit" value="Enviar"/></td>
+	</tr>
+	<tr>
+		<td><label for="apellidos">Apellidos: </label></td>
+		<td colspan="2"><input type="text" id="apellidos" name="apellidos" placeholder="Introduzca su apellido"/></td>
+	</tr>
+	<tr>
+		<td><label for="pass">Contraseña: </label></td>
+		<td colspan="2"><input type="password" id="pass" name="pass" required="required" placeholder="Introduzca su contraseña"/></td>
+	</tr>
+	<tr>
+		<td><label for="edad">Edad: </label></td>
+		<td colspan="2"><input type="number" id="edad" name="edad" min="0" placeholder="Edad superior a 0"/></td>
+	</tr>
+	<tr>
+		<td><label for="email">eMail: </label></td>
+		<td colspan="2"><input type="emailº" id="email" name="email" required="required" placeholder="Introduzca su correo electrónico"/></td>
+	</tr>
+	<tr>
+		<td><label for="telefono">Teléfono: </label></td>
+		<td colspan="2"><input type="tel" id="telefono" name="telefono" pattern="[6-7][0-9]{8}" placeholder="Empieza por 6 o 7"/></td>
+	</tr>
+	<tr>
+		<td><label for="biografia">Breve biografía: </label></td>
+		<td colspan="2"><textarea rows="10" cols="50" name="post" placeholder="Escribe aquí una breve biografía de ti mismo"></textarea></td>
+	</tr>
+</table>
+	</form>
+</body>

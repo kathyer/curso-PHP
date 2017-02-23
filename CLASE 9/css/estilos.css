@@ -1,0 +1,88 @@
+#contenedor
+{
+	width: 900px;
+	margin: 0 auto;
+}
+
+#cabeceraPrincipal
+{
+	background-color: #fcc;
+}
+
+#cabeceraPrincipal img, figcaption
+{
+	width: 200px;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+}
+
+@font-face
+{
+	font-family: SegoeFuente;
+	src: url(../fonts/segoepr.ttf);
+
+}
+
+nav
+{
+	background-color: #cfc;
+	
+}
+
+
+#menuPrincipal
+{
+	background-color: #222266; /* Color del fondo */
+	height: 40px; /* altura del menú */
+	color: #fff; /* Color de la fuente */
+	font-family: Helvetica; /* Tipo de fuente */
+	font-weight: bold; /* Negrita */
+}
+
+#menuPrincipal ul
+{
+	padding: 0; /* Para arrimar la lista al principio del menú */
+}
+
+#menuPrincipal li
+{
+	margin: 0 20px; /* Para separar mas los elementos de la lista*/
+}
+
+aside
+{
+	background-color: #cce;
+	float: left;
+	width: 200px;
+
+}
+
+section
+{
+	background-color: #fcf;
+	padding: 0 10px 0 210px;
+}
+
+#pieDePagina
+{
+	background-color: #ffc;
+
+}
+
+nav li
+{
+	display: inline;
+}
+
+nav ul
+{
+	margin: 0;
+}
+
+h1, h2
+{
+	margin: 0;
+	font-family: segoeFuente;
+	font-weight: bold;
+}

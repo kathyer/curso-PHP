@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+</head><meta charset="utf-8"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<title>Ejercicio final de formularios. Clase 4. Clase 4</title>
+<meta name="Description" content="Ejercicio de repaso de formularios"/>
+</head>
+<body>
+	<div class="container">
+		<form action="salida.php" method="POST" target="_self" enctype="multipart/form-data" oninput="resultado.value=parseInt(valor1.value) + parseInt(valor2.value);resultado2.value=valor3.value + ' ' + valor4.value">
+			<div class="form-group row">
+				<legend class="col-form-legend col-sm-2">Formulario de Registro</legend>
+			</div>
+			
+			<div class="form-group row">
+				<label class="col-sm-2">Intereses</label>
+				<div class="col-sm-10">
+			      	<div class="form-check">
+    	    			<label class="form-check-label">
+						<input class="form-check-input" type="checkbox" value="True" name="ocio"> Ocio
+						<input class="form-check-input" type="checkbox" value="True" name="ofertas"> Ofertas
+						<input class="form-check-input" type="checkbox" value="True" name="bancos"> Bancos
+						<input class="form-check-input" type="checkbox" value="True" name="empleo"> Empleo <br />
+						<input class="form-check-input" type="checkbox" value="True" name="coches"> Coches
+						<input class="form-check-input" type="checkbox" value="True" name="musica"> Música
+						<input class="form-check-input" type="checkbox" value="True" name="compras"> Compras
+						<input class="form-check-input" type="checkbox" value="True" name="deportes"> Deportes <br />
+						<input class="form-check-input" type="checkbox" value="True" name="cursos"> Cursos
+						<input class="form-check-input" type="checkbox" value="True" name="caballero"> Caballero
+						<input class="form-check-input" type="checkbox" value="True" name="viajes"> Viajes
+						<input class="form-check-input" type="checkbox" value="True" name="informatica"> Informática <br />
+						<input class="form-check-input" type="checkbox" value="True" name="hijos"> Hijos
+						<input class="form-check-input" type="checkbox" value="True" name="salud"> Salud
+						<input class="form-check-input" type="checkbox" value="True" name="mujer"> Mujer
+						<input class="form-check-input" type="checkbox" value="True" name="noticias"> Noticias
+						</label>
+					</div>
+				</div>
+    		</div>
+			<div class="form-group row">
+				<label for="pais" class="col-sm-2 col-form-label">Región: </label>
+				<div class="col-sm-10">
+					<label for="pais">Región: </label>
+					<select id="pais" name="pais">
+					<optgroup label="España">
+						<option value="ES_ANDALUCIA">Andalucía</option>
+						<option value="ES_ARAGON">Aragon</option>
+						<option value="ES_ASTURIAS">Asturias</option>
+						<option value="ES_CANTABRIA">Cantabria</option>
+						<option value="ES_CASTILLALAMANCHA">Castilla la Mancha</option>
+						<option value="ES_CASTILLAYLEON">Castilla y León</option>
+						<option value="ES_CATALUÑA">Cataluña</option>
+						<option value="ES_EXTREMADURA" selected="selected">Extremadura</option>
+						<option value="ES_GALICIA">Galicia</option>
+						<option value="ES_ISLASCANARIAS">Islas Canarias</option>
+						<option value="ES_ISLASBALEARES">Islas Baleares</option>				
+						<option value="ES_LARIOJA">La Rioja</option>
+						<option value="ES_MADRID">Madrid</option>
+						<option value="ES_MURCIA">Murcia</option>
+						<option value="ES_NAVARRA">Navarra</option>
+						<option value="ES_PAISVASCO">País Vasco</option>
+						<option value="ES_VALENCIA">Valencia</option>
+						<option value="ES_ARAGON">Aragon</option>
+						<option value="ES_CEUTA">Ceuta</option>
+						<option value="ES_MELILLA">Melilla</option>
+					</optgroup>
+					<option value="GE">Portugal</option>
+					<option value="GE">Alemania</option>
+					<option value="GB">Reino Unido</option>
+					<option value="FR">Francia</option>
+					<option value="VOID">Otro</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="color" class="col-sm-2 col-form-label">Color favorito: </label>
+				<div class="col-sm-10">
+					<input type="color" name="color" id="color" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="biografia" class="col-sm-2 col-form-label">Breve biografía: </label>
+				<div class="col-sm-10">
+					<textarea rows="10" cols="50" name="post" placeholder="Escribe aquí una breve biografía de ti mismo"></textarea>
+				</div>
+			</div>
+			<div class="form-group row">
+				<div class="offset-sm-2 col-sm-10">
+					<input type="submit" class="btn btn-primary" value="Enviar"/>
+				</div>
+			</div>
+			
+			<input type="file" name="archivo" />
+			
+			<fieldset>
+				<legend>Suma de números</legend>
+				<input type="number" id="valor1" value="0" /> +
+				<input type="number" id="valor2" value="0" /> = 
+				<output name="resultado" for="valor1 valor2"></output>
+			</fieldset>
+						
+			<input type="text" id="valor3"/> +
+			<input type="text" id="valor4"/> = 
+			<output name="resultado2" for="valor3 valor4"></output>
+			
+			<meter min="0" max="500" value="450" low="300" high="400">texto</meter>
+			
+			<progress value="70" max="100">70%</progress>
+			
+			<input list="listaDatos" name="nombreDeInputList" />
+			<datalist id="listaDatos">
+				<option value="opcion1" />
+				<option value="opcion1" />
+				<option value="opcion3" />
+			</datalist>
+			<input type="submit" value="Enviar a otro sitio" formaction="http://www.google.es" formmethod="POST"/>
+			
+			<input type="number" id="valor1" value="0" min="0" max="200"/>
+			
+			<input type="file" name="archivos" multiple="multiple"/>
+			
+			<input type="number" id="valor1" value="0" step="30"/>
+			
+			<input type="range" min="1" max="10" value="5 name="rango"></range>
+			
+		</form>
+	</div>
+</body>

@@ -1,0 +1,235 @@
+@font-face{font-family: 'Roboto-Regular';
+	src: url('../fonts/Roboto-Regular.ttf');
+}
+body{
+	font-family: 'Roboto-Regular';
+	font-size: 16px;
+}
+		/*barra navegacion*/
+.menuprincipal{
+	background-color: #1A5276;
+}
+.logo{
+	float: left;
+	width: 3%;
+	margin-left: 40px;
+	padding-top: 5px;
+}
+
+.dulcehogar{
+	font-size: 20px;
+	float: left;
+	height: 50px;
+	padding-left: 60px;
+	padding-right: 110px;
+	padding-top: 15px;
+	line-height: 20px;
+	text-decoration: none;
+	color:#FFF7ED;
+}
+.dulcehogar:hover{
+	text-decoration: none;
+	color:#B2A694;
+}
+
+.nav > li > a{
+	text-align: center;
+	color:#E1E1E1;
+	padding-right:40px;
+	padding-left:40px;
+}
+.nav > li > a:hover{
+	background-color: #ccdfff;
+	color:#050a11;
+}
+
+.nav>li>a{
+	color:#E1E1E1;
+}
+
+.elementoSeleccionado
+{
+	background-color: #6995b2;
+}
+		/*slider*/
+.slide{
+	margin-top: -10px;
+}
+.carousel-inner {
+	margin-left: -105px;
+	width: 1349px;
+}
+.slidesize{
+	margin-left: -125px;
+	margin-right: -104px;
+}
+.divMiniFormulario{
+    padding: 18px;
+    background-color: rgba(255, 247, 237, 0.68);
+    position: absolute;
+    z-index: 500;
+    width: auto;
+    margin-left: 2%;
+    top: 5%;
+    border-radius: 10px;
+
+}
+
+form > ul > li{
+	padding-top: 15px;
+	padding-right: 10px;
+}
+
+.enviar{
+	float: right;
+	margin-top: -20px;
+}
+			/*listado de casas*/
+.pisos{
+	margin-top: 40px;
+}
+
+.iconos{
+	color: #660000;
+	padding-left: 10px;
+}
+			/*Footer*/
+
+.estiloFooter{
+	margin-top: 100px;
+}
+
+.mapa{
+	height: 350px;
+}
+
+@font-face{font-family: 'Roboto-Light';
+	src: url('../fonts/Roboto-Light.ttf');
+}
+
+.contacto{
+	font-family: 'Roboto-Light';
+	font-size: 14px;
+	background-color: #1A5276;
+	border-radius: 5px;
+	padding: 15px;
+	padding-left: 50px;
+	padding-top: 20px;
+	color: #FFF7ED;
+	margin-left: 80px;
+}
+
+.condiciones{
+	color: #660000;
+}
+
+.condiciones:hover{
+	color:#AF4A4A;
+}
+
+.form-group{
+	width: 90%;
+}
+
+.form-group>.boton{
+	margin-left: 250px;
+}
+
+.direccion{
+	margin-bottom: 50px;
+	padding: 30px;
+}
+
+.calle{
+	font-size: 15px;
+}
+
+.siguenos > img{
+	margin-left: 10px;
+}
+		/*Pagina plantilla pisos*/
+.piso{
+	margin-top: 100px;
+}
+
+.promocion{
+	margin-top: 50px;
+}
+
+.promocion > h2{
+	padding-bottom: 15px;
+}
+
+.cajadescripcion{
+	margin-left: -15px;
+	margin-top: 30px;
+}
+
+.descripcion{
+	float: right;
+	padding-right: 10px;
+}
+
+#text_promocion1{
+	margin-top: 30px;
+	text-align: justify;
+}
+
+.detallespiso{
+	padding-right: 0px;
+}
+
+.contacto2{
+	font-family: 'Roboto-Light';
+	font-size: 12px;
+	background-color: #829FB2;
+	border-radius: 5px;
+	padding: 15px;
+	color: #FFF7ED;
+	margin-left: 50px;
+	margin-top: 100px;
+	padding-left: 30px;
+}
+
+.contacto2 >.form-group>.boton{	
+	margin-left: 170px;
+}
+
+.contacta{
+	font-size: 17px;
+}
+
+.ubicacion{
+	margin-top: -120px;
+
+}
+.direccion2{
+	margin-top: 20px;
+	padding-left: 50px;
+}
+.calle2{
+	font-size: 13px;
+}
+.estiloCopyright{
+	padding-left: 6%;
+
+}
+	/*alquiler y ventas*/
+
+#siguientepag{
+	text-align: right;
+	margin-right:80px;
+}
+.elementoseleccionado2{
+	text-decoration: underline;
+}
+	/*Promociones*/
+
+.thumbnail img{
+	width: 100%;
+	height: auto;
+}
+
+.promocion1{
+	margin-top: 40px;
+}

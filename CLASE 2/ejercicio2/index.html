@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+<style>
+.rojo
+{
+	color:red;	
+}
+.textoGrande
+{
+	font-size: 30px;
+}
+</style>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<h1>Ejemplo de lista ordenada</h1>
+<ol>
+<li> Primer elemento </li>
+<li> Segundo elemento </li>
+<li> Tercer elemento </li>
+<li> Cuarto elemento
+	<ol class="list-inline">
+	<li>Primer subelemento del cuarto elemento</li>
+	<li>segundo subelemento del cuarto elemento</li>
+	</ol>
+</li>
+<li> Quinto elemento </li>
+</ol>
+
+<h1>Ejemplo de lista no ordenada</h1>
+<ul>
+<li> Primer elemento
+	<ul>
+	<li>Primer subelemento del primer elemento</li>
+	<li>segundo subelemento del primer elemento</li>
+	</ul>
+</li>
+<li> Segundo elemento
+	<ul>
+	<li>Primer subelemento del segundo elemento</li>
+	<li>segundo subelemento del segundo elemento</li>
+	<li>tercer subelemento del tercer elemento</li>	
+	</ul>
+</li>
+<li> Tercer elemento
+	<ul>
+	<li>Primer subelemento del tercer elemento</li>
+	<li>segundo subelemento del tercer elemento</li>
+	<li>tercer subelemento del tercer elemento</li>
+	<li>cuarto subelemento del tercer elemento</li>
+	</ul>
+</li>
+<li> Cuarto elemento
+	<ol>
+	<li>Primer subelemento del cuarto elemento</li>
+	<li>segundo subelemento del cuarto elemento</li>
+	</ol>
+</li>
+<li> Quinto elemento </li>
+</ul>
+
+<h1>Ejemplo de lista de definición</h1>
+
+<dl class="dl-horizontal">
+<dt>Primer elemento</dt>
+<dd>Descripción 1 del primer elemento</dd>
+<dd>Descripción 2 del primer elemento</dd>
+<dt>Segundo elemento</dt>
+<dd>Descripción del segundo elemento</dd>
+<dt>Tercer elemento</dt>
+<dd>Descripción del tercer elemento</dd>
+</dl>
+
+<table class="table table-bordered table-striped table-hover">
+	<thead>
+	<tr>
+		<th colspan="3">Tabla de ejemplo</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td rowspan="4">Primer dlemento de fila 1</td>
+		<td>Segundo dlemento de fila 1</td>
+	</tr>
+	<tr class="active success">
+		<td>Primer dlemento de fila 2</td>
+		<td>Segundo dlemento de fila 2</td>
+	</tr>
+	<tr class="danger">
+		<td>Primer dlemento de fila 3</td>
+		<td>Segundo dlemento de fila 3</td>
+		<td>Tercer dlemento de fila 3</td>
+	</tr>
+	<tr class="warning">
+		<td>Primer dlemento de fila 4</td>
+		<td>Segundo dlemento de fila 4</td>
+	</tr>
+	<tr >
+		<td class="warning">Primer dlemento de fila 4</td>
+		<td class="warning active">Segundo dlemento de fila 4</td>
+	</tr>
+	<tr class="info">
+		<td>Primer dlemento de fila 4</td>
+		<td>Segundo dlemento de fila 4</td>
+	</tr>
+	<tr>
+		<td>Primer dlemento de fila 4</td>
+		<td>Segundo dlemento de fila 4</td>
+	</tr>
+</tbody>
+</table>
+
+
+</body>
+</html>

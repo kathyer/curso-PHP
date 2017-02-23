@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+</head><meta charset="utf-8"/>
+<link rel="stylesheet" type:="text/css" href="css/estilos.css"/>
+
+<title>Ejercicio 2. Clase 4. Estilos en fichero externo</title>
+<meta name="Description" content="El contenido que sea"/>
+</head>
+<body>
+<h1>Encabezado 1. Prueba de estilos en fichero externo.</h1>
+<p>Prueba de encabezado para ver como quedaría con un css externo</p>
+<form action="salida.php" method="POST" target="_self">
+	<label for="nombre">Nombre: </label>
+	<input type="text" id="nombre" name="nombre"s value="probando" required="required":/>
+	<br/>
+	<label for="pass">Contraseña: </label>
+	<input type="password" id="pass" name="pass" placeholder="Introduzca su contraseña. Mayor de 6 caracteres"/>
+	<br/>
+	<label for="numero">Número: </label>
+	<input type="number" id="numero" name="numero" disabled="disabled"/>
+	<br/>
+	<label for="busqueda">Buscar: </label>
+	<input type="search" id="busqueda" name="busqueda"/>
+	<br/>
+	<label for="enlace">Buscar: </label>
+	<input type="url" id="enlace" name="enlace"/>
+	<br/>
+	<label for="telefono">Teléfono: </label>
+	<input type="tel" id="telefono" name="telefono"/>
+	<br/>
+	<label for="correo">eMail: </label>
+	<input type="email" id="correo" name="correo"/>
+	<br/>
+	<label for="color">Color: </label>
+	<input type="color" id="color" name="color"/>
+	<br/>
+	<input type="submit" value="Enviar información"/>
+
+	<textarea rows="10" cols="50" name="post">Texto predefinico</textarea>
+</form>
+</body>

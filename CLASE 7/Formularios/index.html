@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+</head><meta charset="utf-8"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<title>Ejercicio final de formularios. Clase 4. Clase 4</title>
+<meta name="Description" content="Ejercicio de repaso de formularios"/>
+</head>
+<body>
+<h1>Formulario de registro</h1>
+<form action="salida.php" method="POST" target="_self">
+
+<table>
+	<thead>
+	</thead>
+	<tbody>
+	<tr>
+		<td><label for="nombre">Nombre: </label></td>
+		<td><input type="text" id="nombre" name="nombre" required="required" placeholder="Introduzca su nombre" /></td>
+		<td><input type="submit" value="Enviar"/></td>
+	</tr>
+	<tr>
+		<td><label for="apellidos">Apellidos: </label></td>
+		<td><input type="text" id="apellidos" name="apellidos" placeholder="Introduzca su apellido"/></td>
+		<td><input type="reset" value="Por defecto"/></td>
+	</tr>
+	<tr>
+		<td><label for="pass">Contraseña: </label></td>
+		<td colspan="2"><input type="password" id="pass" name="pass" required="required" placeholder="Introduzca su contraseña"/></td>
+	</tr>
+	<tr>
+		<td><label for="sexo">Sexo: </label></td>
+		<td colspan="2"><input type="radio" value="H" name="sexo" checked="checked" />Hombre <input type="radio" value="M" name="sexo"/ >Mujer</td>
+	</tr>
+	<tr>
+		<td><label for="edad">Edad: </label></td>
+		<td colspan="2"><input type="number" id="edad" name="edad" min="0" placeholder="Edad superior a 0"/></td>
+		<td>
+	</tr>
+	<tr>
+		<td><label for="fechaNacimiento">Fecha de nacimiento: </label></td>
+		<td colspan="2"><input type="date" name="fechaNacimiento" value="2000-01-01"/></td>
+	</tr>
+	<tr>
+		<td><label for="email">eMail: </label></td>
+		<td colspan="2"><input type="emailº" id="email" name="email" required="required" placeholder="Introduzca su correo electrónico"/></td>
+	</tr>
+	<tr>
+		<td><label for="telefono">Teléfono: </label></td>
+		<td colspan="2"><input type="tel" id="telefono" name="telefono" pattern="[6-7][0-9]{8}" placeholder="Empieza por 6 o 7"/></td>
+	</tr>
+	<tr>
+		<td><label for="telefono">Teléfono: </label></td>
+		<td colspan="2"><input type="tel" id="telefono" name="telefono" pattern="[6-7][0-9]{8}" placeholder="Empieza por 6 o 7"/></td>
+	</tr>
+	<tr>
+		<td><label for="telefono">Teléfono: </label></td>
+		<td colspan="2"><input type="tel" id="telefono" name="telefono" pattern="[6-7][0-9]{8}" placeholder="Empieza por 6 o 7"/></td>
+	</tr>
+	<tr>
+		<td><label>Intereses: </label></td>
+		<td colspan="2">
+		<input type="checkbox" value="True" name="ocio"> Ocio
+		<input type="checkbox" value="True" name="ofertas"> Ofertas
+		<input type="checkbox" value="True" name="bancos"> Bancos
+		<input type="checkbox" value="True" name="empleo"> Empleo <br />
+		<input type="checkbox" value="True" name="coches"> Coches
+		<input type="checkbox" value="True" name="musica"> Música
+		<input type="checkbox" value="True" name="compras"> Compras
+		<input type="checkbox" value="True" name="deportes"> Deportes <br />
+		<input type="checkbox" value="True" name="cursos"> Cursos
+		<input type="checkbox" value="True" name="caballero"> Caballero
+		<input type="checkbox" value="True" name="viajes"> Viajes
+		<input type="checkbox" value="True" name="informatica"> Informática <br />
+		<input type="checkbox" value="True" name="hijos"> Hijos
+		<input type="checkbox" value="True" name="salud"> Salud
+		<input type="checkbox" value="True" name="mujer"> Mujer
+		<input type="checkbox" value="True" name="noticias"> Noticias
+		</td>
+	</tr>
+	<tr>
+		<td><label for="pais">Región: </label></td>
+		<td colspan="2"><select id="pais" name="pais">
+			<optgroup label="España">
+					<option value="ES_ANDALUCIA">Andalucía</option>
+					<option value="ES_ARAGON">Aragon</option>
+					<option value="ES_ASTURIAS">Asturias</option>
+					<option value="ES_CANTABRIA">Cantabria</option>
+					<option value="ES_CASTILLALAMANCHA">Castilla la Mancha</option>
+					<option value="ES_CASTILLAYLEON">Castilla y León</option>
+					<option value="ES_CATALUÑA">Cataluña</option>
+					<option value="ES_EXTREMADURA" selected="selected">Extremadura</option>
+					<option value="ES_GALICIA">Galicia</option>
+					<option value="ES_ISLASCANARIAS">Islas Canarias</option>
+					<option value="ES_ISLASBALEARES">Islas Baleares</option>				
+					<option value="ES_LARIOJA">La Rioja</option>
+					<option value="ES_MADRID">Madrid</option>
+					<option value="ES_MURCIA">Murcia</option>
+					<option value="ES_NAVARRA">Navarra</option>
+					<option value="ES_PAISVASCO">País Vasco</option>
+					<option value="ES_VALENCIA">Valencia</option>
+					<option value="ES_ARAGON">Aragon</option>
+					<option value="ES_CEUTA">Ceuta</option>
+					<option value="ES_MELILLA">Melilla</option>
+			</optgroup>
+			<option value="GE">Portugal</option>
+			<option value="GE">Alemania</option>
+			<option value="GB">Reino Unido</option>
+			<option value="FR">Francia</option>
+			<option value="VOID">Otro</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td><label for="color">Color favorito: </label></td>
+		<td colspan="2"><input type="color" name="color" id="color" /></td>
+	</tr>
+	<tr>
+		<td><label for="biografia">Breve biografía: </label></td>
+		<td colspan="2"><textarea rows="10" cols="50" name="post" placeholder="Escribe aquí una breve biografía de ti mismo"></textarea></td>
+	</tr>
+</table>
+	</form>
+</body>
+</html>

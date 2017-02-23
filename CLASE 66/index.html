@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Animaciones</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script defer src="js/codigo.js"></script>
+	<style>
+	header
+	{
+		height: 300px;
+		width: 100%;
+		background-color: #ccf;
+	}
+	.flash
+	{
+		border: 1px solid #000;
+		border-radius: 5px;
+		padding: 5px 20px;
+		display: table;
+		text-align: center;
+		min-width: 200px;
+		position: absolute;
+		top: 20px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		/* La mitad de lo que ocupa lo mueve a la izquierda, así queda centrado */
+
+	}
+	.flash-success
+	{
+		background-color: #cfc;
+		color: #383;
+		border-color: #383;
+	}
+	.flash-error
+	{
+		background-color: #fcc;
+		color: #833;
+		border-color: #833;
+	}
+	</style>
+</head>
+<body>
+<header>
+</header>
+
+	<div class="flash flash-success">Este es un mensaje de éxito</br>Y este también</div>
+
+</body>
+</html>

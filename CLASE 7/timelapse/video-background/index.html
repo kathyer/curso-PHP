@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 1. Clase 7: Timelapse</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <video poster="img/fondo.jpg" id="videoFondo" playsinline autoplay muted loop>
+
+<!-- Si queremos que el video se reproduzca por ejemplo apartir del primer minuto y así evitar textos de entrada del video y autor, ponemos despues del nombre del video la expresion  #t=60   donde 60= a los segundos donde queremos que se empiece a reproducir el video  EJEMPLO: video/singapur.webm#t=60   -->
+
+<source src="videos/videoClase7.webm#t=10" type="video/webm">
+</video>
+<div id="portada">
+<h1>Ghost in the shell</h1>
+<p>Ejercicio de práctica </p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
+<p>Aenean pharetra convallis pellentesque. Vestibulum et metus lectus. Nunc consectetur, ipsum in viverra eleifend, erat erat ultricies felis, at ultricies mi massa eu ligula. Suspendisse in justo dapibus metus sollicitudin ultrices id sed nisl.</p>
+<button>Pausar</button>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

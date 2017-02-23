@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+</head><meta charset="utf-8"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<title>Ejercicio final de formularios. Clase 4. Clase 4</title>
+<meta name="Description" content="Ejercicio de repaso de formularios"/><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<h1>Formulario de registro</h1>
+<form action="salida.php" method="POST" target="_self">
+
+<table>
+	<thead>
+	</thead>
+	<tbody>
+	<tr>
+		<td><label for="nombre">Nombre: </label></td>
+		<td><input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre" /></td>
+		<td><input type="submit" value="Enviar"/></td>
+	</tr>
+	<tr>
+		<td><label for="apellidos">Apellidos: </label></td>
+		<td><input type="text" id="apellidos" name="apellidos" placeholder="Introduzca su apellido"/></td>
+		<td><input type="reset" value="Reset"/></td>
+	</tr>
+	<tr>
+		<td><label for="pass">Contraseña: </label></td>
+		<td><input type="password" id="pass" name="pass" placeholder="Introduzca su contraseña"/></td>
+		<td><input type="button" value="Botón estándar"/></td>
+	</tr>
+	<tr>
+		<td><label for="edad">Edad: </label></td>
+		<td colspan="2"><input type="number" id="edad" name="edad" min="0" placeholder="Edad superior a 0"/></td>
+	</tr>
+	<tr>
+		<td><label for="email">eMail: </label></td>
+		<td colspan="2"><input type="emailº" id="email" name="email" placeholder="Introduzca su correo electrónico"/></td>
+	</tr>
+	<tr>
+		<td><label for="telefono">Teléfono: </label></td>
+		<td colspan="2"><input type="tel" id="telefono" name="telefono" pattern="[6-7][0-9]{8}" placeholder="Empieza por 6 o 7"/></td>
+	</tr>
+	<tr>
+		<td><label for="biografia">Breve biografía: </label></td>
+		<td colspan="2"><textarea rows="10" cols="50" name="post" placeholder="Escribe aquí una breve biografía de ti mismo"></textarea></td>
+	</tr>
+	<tr>
+		<td><label for="fechayhora">Fecha y hora: </label></td>
+		<td colspan="2"><input type="datetime-local" name="fechayhora" /></td>
+	</tr>
+	<tr>
+		<td><label for="fecha">Fecha: </label></td>
+		<td colspan="2"><input type="date" name="fecha" /></td>
+	</tr>
+	<tr>
+		<td><label for="mes">Mes: </label></td>
+		<td colspan="2"><input type="Month" name="mes" /></td>
+	</tr>
+	<tr>
+		<td><label for="semana">Semana: </label></td>
+		<td colspan="2"><input type="Week" name="semana" /></td>
+	</tr>
+	<tr>
+		<td><label for="hora">Hora: </label></td>
+		<td colspan="2"><input type="Time" name="hora" /></td>
+	</tr>
+</table>
+
+<input type="checkbox" value="1" name="casilla1" checked="checked"> Texto de la casilla 1<br/>
+<input type="checkbox" value="2" name="casilla2" checked="checked" readonly="readonly"> Texto de la casilla 2<br/>
+<input type="checkbox" value="3" name="casilla3"> Texto de la casilla 3<br/>
+<input type="radio" value="opcion 1" name="radio1" checked="checked"> Radio 1 <br>
+<input type="radio" value="opcion 2" name="radio1"> Radio 2 <br>
+
+<select name="pais" multiple="multiple" size="10">
+<option value="ES">España</option>
+<option value="PT">Portugal</option>
+<option value="FR" selected="selected">Francia</option>
+<option value="GE">Alemania</option>
+<option value="GB">Reino Unido</option>
+</select> Elegir pais <br>
+
+<select name="pais2">
+<optgroup label="Países mediterráneos">
+	<option value="ES">España</option>
+	<option value="PT">Portugal</option>
+	<option value="FR" selected="selected">Francia</option>
+</optgroup>
+	<option value="GE">Alemania</option>
+	<option value="GB">Reino Unido</option>
+</select> Elegir pais <br>
+	</form>
+</body>

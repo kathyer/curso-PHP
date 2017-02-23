@@ -1,0 +1,107 @@
+#contenedor
+{
+	width: 900px;
+	margin: 0 auto;
+}
+
+#cabeceraPrincipal
+{
+	background-color: #fcc;
+}
+
+#cabeceraPrincipal img, figcaption
+{
+	width: 200px;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+}
+
+@font-face
+{
+	font-family: SegoeFuente;
+	src: url(../fonts/segoepr.ttf);
+
+}
+
+nav
+{
+	background-color: #cfc;
+	
+}
+
+nav li
+{
+	display: inline;
+}
+
+nav ul
+{
+	margin: 0;
+}
+
+#menuPrincipal
+{
+	background-color: #222266; /* Color del fondo */
+	height: 40px; /* altura del menú */
+	color: #fff; /* Color de la fuente */
+	font-family: Helvetica; /* Tipo de fuente */
+	font-weight: bold; /* Negrita */
+	margin-bottom: 5px;
+	border-radius: 20px 50px 10px 25px; /* Si se introducen dos valores funciona en diagonal */
+	box-shadow: 5px 5px 5px #888;
+}
+
+#menuPrincipal ul
+{
+	padding: 0; /* Para arrimar la lista al principio del menú */
+}
+
+#menuPrincipal li
+{
+	margin: 0 20px; /* Para separar mas los elementos de la lista*/
+	line-height: 40px;
+}
+
+aside
+{
+	background-color: #cce;
+	float: left;
+	width: 200px;
+	border-left: 2px solid #8a8;
+	border-top: 2px solid #8a8;
+	padding-left: 20px;
+	box-sizing: border-box; /* Ignora el tamaño del borde y margenenes internos para meterlo en el interior. Es decir, no crece mas aunque cabmies el ancho de los margenes internos */
+
+}
+
+aside p:nth-child(even)
+{
+	font-size: 40px;
+}
+
+section
+{
+	background-color: #fcf;
+	padding: 0 10px 0 210px;
+	border-bottom: 0 !important; /* A pesar de haber dicho que dibuje todo el borde, ahora hacemos que no muestre la parte de abajo. */
+	border: 2px solid #8a8; /* Los parámetros son ancura del borde, tipo de borde (solido = linea) y el color */
+}
+
+#pieDePagina
+{
+	background-color: #ffc;
+
+}
+
+h1, h2
+{
+	margin: 0;
+	font-family: segoeFuente;
+	font-weight: bold;
+}
+
+h2 + h3
+{
+	font-size: 60px;
+}

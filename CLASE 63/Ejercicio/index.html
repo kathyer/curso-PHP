@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Canvas</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script defer src="canvas.js"></script>
+	<style>
+	/* Afecta a todas las etiquetas canvas */
+		canvas
+		{
+			border: 1px solid #000;
+		}
+	</style>
+</head>
+<body>
+
+	<canvas id="canvas" width="640" height="480">
+		<img src="gato.jpg" />
+	</canvas> <br/>
+
+	<input type="radio" id="tipoRecta" name="tipo" value="recta" checked="checked"> Recta
+	<input type="radio" id="tipoCuadrado" name="tipo" value="cuadrado"> Cuadrado
+	<input type="radio" id="tipoTexto" name="tipo" value="texto"> Texto
+	Ancho del borde
+	<select id="anchoBorde">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+	</select>
+	<br/>
+	<input type="text" id="texto" name="texto"/>
+	<button class="btn btn-primary">Escribir</button>
+	Color de línea:	<input id="colorLinea" value="#000000" type="color" name="colorLinea"/>
+	Color de relleno: <input id="colorRelleno"  value="#0000ff" type="color" name="colorRelleno"/>
+	<button class="btn btn-danger" id="botonLimpiar">Limpiar</button>
+
+
+</body>
+</html>

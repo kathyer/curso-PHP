@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	width: 711px;
+	height: 155px;
+	z-index: 1;
+}
+</style>
+<style type="text/css">
+#apDiv2 {
+	position: absolute;
+	width: 339px;
+	height: 209px;
+	z-index: 2;
+	left: 611px;
+	top: 198px;
+}
+#apDiv3 {
+	position: absolute;
+	width: 294px;
+	height: 202px;
+	z-index: 2;
+}
+</style>
+<style type="text/css">
+#apDiv4 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 3;
+	left: 467px;
+	top: 243px;
+}
+</style>
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="apDiv1">
+  <form id="form1" name="form1" method="post" action="">
+    <p>
+      <label for="idnombre">nombre</label>
+      <input type="text" name="idnombre" id="idnombre" />
+    </p>
+    <p><span id="sprytextfield1">
+    <label for="nombrespry">nombre Spry</label>
+    <input type="text" name="nombrespry" id="nombrespry" />
+    Introduce un nombre correcto</span></p>
+    <table width="384">
+      <tr>
+        <td><label>
+          <input type="radio" name="RadioGroup1" value="opción" id="RadioGroup1_0" />
+          Estudiante 
+          <input name="RadioGroup1" type="radio" id="RadioGroup1_1" value="opción" checked="checked" />
+Trabajador 
+<input type="radio" name="RadioGroup1" value="opción" id="RadioGroup1_2" />
+Jubilado</label></td>
+      </tr>
+    </table>
+    <p>
+      <label for="Pais">Pais</label>
+      <select name="Pais" id="Pais">
+        <option>España</option>
+        <option>Portual</option>
+        <option>Francia</option>
+        <option>Andorra</option>
+        <option>Alemania</option>
+        <option>Estados Unidos</option>
+        <option>Japón</option>
+        <option>China</option>
+        <option>Taiwan</option>
+        <option>Italia</option>
+        <option>Otro</option>
+      </select>
+    </p>
+    <p>
+      <input type="submit" name="Enviar" id="Enviar" value="Enviar" />
+    </p>
+  </form>
+</div>
+<p>&nbsp; </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<p>&nbsp;</p>
+<script type="text/javascript">
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none", {hint:"Introduce tu nombre"});
+  </script>
+</body>
+</html>

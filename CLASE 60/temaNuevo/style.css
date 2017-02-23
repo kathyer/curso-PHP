@@ -1,0 +1,61 @@
+/*
+Theme Name: Mi tema
+Template Theme URI: http://www.mistemas.es
+Autor: Jose
+Description: Plantilla de prueba del curso de Wordspress.
+Version: 1.0
+*/
+
+.titulo
+{
+	color: blue;
+	font-family: 'Bitter', serif;
+	font-size: 50px;
+	font-weight: normal;
+	line-height: 54px;
+	padding: 10px 0px;
+	margin: 0;
+	text-align: center;
+	background-color: #00264d;
+	color: #e6f2ff;
+}
+
+/* CLASES PARA EL MENÚ PRINCIPAL */
+
+.menu ul
+{
+	padding: 0;
+}
+.menuPrincipal
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+	background-color: #036;
+}
+
+.menuPrincipal ul li
+{
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	background-color: #036;
+}
+
+.menuPrincipal ul li a
+{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 10px;
+	margin: 0;
+	background-color: #036;
+}
+
+.menuPrincipal ul li a:hover
+{
+	display: inline-block;
+	color: #fff;
+	background-color: #369;
+}

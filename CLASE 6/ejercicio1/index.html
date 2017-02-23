@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+
+</head><meta charset="utf-8"/>
+<title>Ejercicio 1. Clase 4</title>
+<meta name="Description" content="El contenido que sea"/>
+</head>
+<body>
+<h1>Vídeo de prueba</h1>
+<video src="videoClase4.webm" controls> Tu navegador no soporta el elemento <code>vídeo</code>. </video>
+<h1>Audio de prueba</h1>
+<audio src="audioClase4.m4a" controls> Tu navegador no soporta el elemento <code>audio</code>. </audio>
+
+<h1>Audio de prueba en bucle</h1>
+<audio src="audioClase4.m4a" controls autoplay loop> Tu navegador no soporta el elemento <code>audio</code>. </audio>
+
+<h1>Audio de prueba con controles personalizados</h1>
+<audio id="audio" src="audioClase4.m4a"></audio>
+<div>
+<button onclick="document.getElementById('audio').play()">Reproducir el audio</button>
+<button onclick="document.getElementById('audio').pause()">Pausar el audio</button>
+<button onclick="document.getElementById('audio').volume+=0.1()">Aumentar el Volumen</button>
+<button onclick="document.getElementById('audio').volume-=0.1()">Disminuir el Volumen</button>
+</div>
+
+</body>
